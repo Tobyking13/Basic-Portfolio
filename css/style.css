@@ -22,6 +22,29 @@ p {
   margin: 0;
 }
 
+#about {
+  color: rgb(31, 31, 59);
+  font-size: 60px;
+  grid-area: about;
+  border-right: 4px solid black;
+  text-align: right;
+  padding-right: 10px;
+  margin-right: 25%;
+}
+
+#content {
+  grid-area: content;
+}
+
+#aboutGrid {
+  margin: 0px 5px;
+  display: grid;
+  grid-template-rows: 300px;
+  grid-template-columns: 20% 80%;
+  grid-template-areas: 
+  "about content";
+}
+
 #work-1 {
   grid-area: work-1;
   background-image: url(../images/02-portfolio-4.jpg);
@@ -47,23 +70,32 @@ p {
   background-image: url(../images/02-run-buddy.jpg);
 }
 
+#work {
+  color: rgb(31, 31, 59);
+  font-size: 60px;
+  grid-area: work;
+  border-right: 4px solid black;
+  text-align: right;
+  padding-right: 10px;
+  margin-right: 25%;
+}
+
 #portfolioGrid {
   margin: 0px 5%;
   display: grid;
-  justify-content: flex-end;
-  grid-template-rows: 300px 100px 100px;
-  grid-template-columns: 40% 40%;
+  grid-template-rows: 300px 120px 120px;
+  grid-template-columns: 20% 40% 40%;
   grid-template-areas: 
-  "work-1 work-1"
-  "work-2 work-3"
-  "work-4 work-5";
+  "work work-1 work-1"
+  "work work-2 work-3"
+  "work work-4 work-5";
 }
 
 .portfolioGridArea {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  margin: 5px;
+  margin: 5px;;
   cursor: pointer;
   display: grid;
   align-content: flex-end;
@@ -89,22 +121,4 @@ p {
   padding: 2px;
   font-size: 10px;
   padding-right: 5px;
-}
-
-#sidebar {
-  height: 100%;
-  width: 20%;
-  position: fixed;
-  z-index: 1;
-  top: 0;
-  left: 0;
-  overflow-x: hidden;
-  padding-top: 20px;
-}
-
-#sidebar h2 {
-  padding: 6px 8px 6px 16px;
-  text-decoration: none;
-  font-size: 25px;
-  display: block;
 }
