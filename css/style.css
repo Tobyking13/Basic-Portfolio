@@ -22,22 +22,71 @@ p {
   margin: 0;
 }
 
+.nav {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  height: 100px;
+  background-color: rgb(53, 57, 74);
+  color: rgb(53, 57, 74);
+}
+
+#nav-header {
+  background-color: skyblue;
+  position: absolute;
+  left: 0;
+  right: 60%;  
+}
+
+#nav-header h1 {
+  text-align: right;
+  font-size: 40px;
+  padding: 1px;
+}
+
+.nav a{
+  padding: 0px 20px;
+  font-size: 20px;
+  position: flex;
+  text-decoration: none;
+  color: skyblue;
+  border-bottom: 4px solid;
+}
+
+.hero-banner {
+  display: flex;
+  height: 200px;
+  background-image: linear-gradient(rgba(0, 150, 255, 0.2), rgba(0, 150, 255, 0.2)), url(../images/02-hero-bg.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+#banner-subtitle {
+  background-color: skyblue;
+  color: rgb(53, 57, 74);
+  font-size: 25px;
+  position: absolute;
+  right: 50px;
+  top: 200px
+}
+
 #about {
   color: rgb(31, 31, 59);
-  font-size: 60px;
   grid-area: about;
   border-right: 4px solid black;
-  text-align: right;
-  padding-right: 10px;
   margin-right: 25%;
+  font-size: 27px;
+  padding-right: 30px; 
+  text-align:right;
 }
+
 
 #content {
   grid-area: content;
 }
 
 #aboutGrid {
-  margin: 0px 5px;
+  margin: 40px 5%;
   display: grid;
   grid-template-rows: 300px;
   grid-template-columns: 20% 80%;
@@ -72,16 +121,16 @@ p {
 
 #work {
   color: rgb(31, 31, 59);
-  font-size: 60px;
   grid-area: work;
   border-right: 4px solid black;
-  text-align: right;
-  padding-right: 10px;
-  margin-right: 25%;
+  margin-right: 25%; 
+  font-size: 27px;
+  padding-right: 30px;
+  text-align:right;
 }
 
 #portfolioGrid {
-  margin: 0px 5%;
+  margin: 40px 5%;
   display: grid;
   grid-template-rows: 300px 120px 120px;
   grid-template-columns: 20% 40% 40%;
@@ -95,7 +144,7 @@ p {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  margin: 5px;;
+  margin: 5px;
   cursor: pointer;
   display: grid;
   align-content: flex-end;
@@ -121,4 +170,55 @@ p {
   padding: 2px;
   font-size: 10px;
   padding-right: 5px;
+}
+
+#contactGrid {
+  margin: 40px 5%;
+  display: grid;
+  grid-template-rows: 150px;
+  grid-template-columns: 20% 1fr 1fr 1fr 1fr 1fr;
+  grid-template-areas: 
+  "contact phone email github twitter spotify";
+}
+
+#contact {
+  color: rgb(31, 31, 59);
+  grid-area: contact;
+  border-right: 4px solid black;
+  margin-right: 25%; 
+  font-size: 27px;
+  padding-right: 30px;
+  text-align:right;
+}
+
+#phone {
+  grid-area: phone;
+}
+
+#email {
+  grid-area: email;
+}
+
+#github {
+  grid-area: github;
+}
+
+#twitter {
+  grid-area: twitter;
+}
+
+#spotify {
+  grid-area: spotify;
+}
+
+.contact-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  color: rgb(53, 57, 74);
+}
+
+#contactGrid p {
+  border-bottom: 2px solid rgb(53, 57, 74);
 }
