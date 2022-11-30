@@ -1,112 +1,110 @@
 <!DOCTYPE html>
 <html lang="en-gb">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Lernantino // Web Developer</title>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Lernantino // Web Developer</title>
-  <link rel="stylesheet" href="./css/style.css" />
-</head>
+  <body>
+    <!-- main logo / nav -->
+    <header>
+      <nav class="nav">
+        <div id="nav-header">
+          <h1>Toby King</h1>
+        </div>
+        <div id="nav-links">
+          <a href="#about">About Me</a>
+          <a href="#work">Work</a>
+          <a href="#contact">Contact Me</a>
+          <a href="">Resume</a>
+        </div>
+      </nav>
+    </header>
 
-<body>
-  <!-- main logo / nav -->
-  <header>
-    <nav class="nav">
-      <div id="nav-header">
-        <h1>Lernantino</h1>
-      </div>
-      <div id="nav-links">
-        <a href="">About Me</a>
-        <a href="">Work</a>
-        <a href="">Contact Me</a>
-        <a href="">Resume</a>
-      </div>
-    </nav>
-  </header>
-
-  <!-- hero banner -->
-  <section class="hero-banner">
-    <div id="banner-subtitle">
-      <h2>Cool subtitle here!</h2>
-    </div>
-  </section>
-
-  <main class="page-wrapper">
-
-    <!-- about me -->
-    <section class="page-section" id="aboutGrid">
-
-      <div id="about">
-        <h2>About Me</h2>
-        <!-- <h2 id="about">Me</h2> -->
-      </div>
-      <div id="content">
-        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
-          the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
-          scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into
-          electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of
-          Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like
-          Aldus
-          PageMaker including versions of Lorem Ipsum.</p>
-      </div>
-
-    </section>
-
-    <!-- portfolio container -->
-    <section class="page-section" id="portfolioGrid">
-      <div id="work">
-        <h2>Work</h2>
-      </div>
-      <div id="work-1" class="portfolioGridArea">
-        <div class="portfolioHeading">Surf Report</div>
-        <div class="portfolioParagraph">MERN Stack</div>
-      </div>
-      <div id="work-2" class="portfolioGridArea">
-        <div class="portfolioHeading">LED Wall</div>
-        <div class="portfolioParagraph">Node / IoT</div>
-      </div>
-      <div id="work-3" class="portfolioGridArea">
-        <div class="portfolioHeading">Calculator</div>
-        <div class="portfolioParagraph">React / JavaScript / CSS</div>
-      </div>
-      <div id="work-4" class="portfolioGridArea">
-        <div class="portfolioHeading">Pastel Puzzle</div>
-        <div class="portfolioParagraph">MERN Stack</div>
-      </div>
-      <div id="work-5" class="portfolioGridArea">
-        <div class="portfolioHeading">Run Buddy</div>
-        <div class="portfolioParagraph">HTML / CSS</div>
+    <!-- hero banner -->
+    <section class="hero-banner">
+      <div id="banner-subtitle">
+        <h2>Portfolio</h2>
       </div>
     </section>
 
+    <main class="page-wrapper">
+      <!-- about me -->
+      <section class="page-section" id="aboutGrid">
+        <div id="about">
+          <h2>About Me</h2>
+          <!-- <h2 id="about">Me</h2> -->
+        </div>
+        <div id="img"></div>
+        <div id="content">
+          <p>
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry. Lorem Ipsum has been the industry's standard dummy text
+            ever since the 1500s, when an unknown printer took a galley of type
+            and scrambled it to make a type specimen book. It has survived not
+            only five centuries, but also the leap into electronic typesetting,
+            remaining essentially unchanged. It was popularised in the 1960s
+            with the release of Letraset sheets containing Lorem Ipsum passages,
+            and more recently with desktop publishing software like Aldus
+            PageMaker including versions of Lorem Ipsum.
+          
+          </p>
+        </div>
+      </section>
 
+      <!-- portfolio container -->
+      <section class="page-section" id="portfolioGrid">
+        <div id="work">
+          <h2>Work</h2>
+        </div>
+        <a href="https://tobyking13.github.io/toby-king-challenge1-refactoring/" id="work-1" class="portfolioGridArea">
+          <div>
+            <div class="portfolioHeading">Horiseon</div>
+            <div class="portfolioParagraph">HTML / CSS Refactoring</div>
+          </div>
+        </a>
+        <div id="work-2" class="portfolioGridArea">
+          <div class="portfolioHeading">LED Wall</div>
+          <div class="portfolioParagraph">Node / IoT</div>
+        </div>
+        <div id="work-3" class="portfolioGridArea">
+          <div class="portfolioHeading">Calculator</div>
+          <div class="portfolioParagraph">React / JavaScript / CSS</div>
+        </div>
+        <div id="work-4" class="portfolioGridArea">
+          <div class="portfolioHeading">Pastel Puzzle</div>
+          <div class="portfolioParagraph">MERN Stack</div>
+        </div>
+        <div id="work-5" class="portfolioGridArea">
+          <div class="portfolioHeading">Run Buddy</div>
+          <div class="portfolioParagraph">HTML / CSS</div>
+        </div>
+      </section>
 
-    <!-- contact -->
-    <section class="page-section" id="contactGrid">
-      <div id="contact">
-        <h2>Contact Me</h2>
-      </div>
-      <div id="phone" class="contact-content">
-        <p>07783 628363</p>
-      </div>
-      <div id="email" class="contact-content">
-        <p>tobyking13@gmail.com</p>
-      </div>
-      <div id="github" class="contact-content">
-        <p>GitHub</p>
-      </div>
-      <div id="twitter" class="contact-content">
-        <p>Twitter</p>
-      </div>
-      <div id="spotify" class="contact-content">
-        <p>Spotify</p>
-      </div>
-    </section>
-
-
-
-  </main>
-</body>
-
+      <!-- contact -->
+      <section class="page-section" id="contactGrid">
+        <div id="contact">
+          <h2>Contact Me</h2>
+        </div>
+        <div id="phone" class="contact-content">
+          <p>07783 628363</p>
+        </div>
+        <div id="email" class="contact-content">
+          <p>tobyking13@gmail.com</p>
+        </div>
+        <div id="github" class="contact-content">
+          <p>GitHub</p>
+        </div>
+        <div id="twitter" class="contact-content">
+          <p>Twitter</p>
+        </div>
+        <div id="spotify" class="contact-content">
+          <p>Spotify</p>
+        </div>
+      </section>
+    </main>
+  </body>
 </html>

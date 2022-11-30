@@ -9,6 +9,10 @@ body {
   line-height: 1.5;
 }
 
+a {
+  text-decoration: none;
+}
+
 h1,
 h2,
 h3,
@@ -16,6 +20,7 @@ h4,
 h5,
 h6 {
   margin: 0;
+  color: rgb(53, 57, 74);
 }
 
 p {
@@ -50,17 +55,18 @@ p {
 
 .nav a {
   padding: 0px 20px;
-  font-size: 20px;
+  font-size: 18px;
   position: flex;
+  font-weight: lighter;
   text-decoration: none;
   color: skyblue;
-  border-bottom: 4px solid;
+  border-bottom: 2px solid;
 }
 
 .hero-banner {
   display: flex;
   height: 200px;
-  background-image: linear-gradient(rgba(0, 150, 255, 0.2), rgba(0, 150, 255, 0.2)), url(../images/02-hero-bg.jpg);
+  background-image: linear-gradient(rgba(0, 149, 255, 0.476), rgba(0, 150, 255, 0.2)), url(../images/02-hero-bg.jpg);
   background-position: center;
   background-size: cover;
 }
@@ -70,7 +76,7 @@ p {
   color: rgb(53, 57, 74);
   font-size: 25px;
   position: absolute;
-  right: 50px;
+  right: 110px;
   top: 200px;
   padding: 5px;
 }
@@ -78,30 +84,43 @@ p {
 #about {
   color: rgb(31, 31, 59);
   grid-area: about;
-  border-right: 4px solid black;
+  border-right: 4px solid rgb(53, 57, 74);
   margin-right: 25%;
   font-size: 27px;
   padding-right: 30px;
   text-align: right;
 }
 
+#img {
+  grid-area: img;
+
+  background-image:url(../images/Toby.jpg);
+  box-shadow: 0 0 10px 10px white inset;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+}
 
 #content {
   grid-area: content;
+  padding-left: 40px;
 }
 
 #aboutGrid {
   margin: 40px 5%;
   display: grid;
   grid-template-rows: 300px;
-  grid-template-columns: 20% 80%;
+  grid-template-columns: 20% 30% 50%;
   grid-template-areas:
-    "about content";
+    "about img content";
 }
 
 #work-1 {
   grid-area: work-1;
-  background-image: url(../images/02-portfolio-4.jpg);
+  background-image: url(../images/screenshot-webpage.png);
+  background-size: cover;
+  background-position: top;
 }
 
 #work-2 {
@@ -127,7 +146,7 @@ p {
 #work {
   color: rgb(31, 31, 59);
   grid-area: work;
-  border-right: 4px solid black;
+  border-right: 4px solid rgb(53, 57, 74);
   margin-right: 25%;
   font-size: 27px;
   padding-right: 30px;
@@ -144,6 +163,8 @@ p {
     "work work-2 work-3"
     "work work-4 work-5";
 }
+
+
 
 .portfolioGridArea {
   background-position: center;
@@ -165,6 +186,7 @@ p {
 
 .portfolioHeading {
   background-color: skyblue;
+  color: rgb(53, 57, 74);
   padding: 2px;
   font-weight: bold;
   padding-right: 5px;
@@ -172,6 +194,7 @@ p {
 
 .portfolioParagraph {
   background-color: skyblue;
+  color: rgb(53, 57, 74);
   padding: 2px;
   font-size: 10px;
   padding-right: 5px;
@@ -189,7 +212,7 @@ p {
 #contact {
   color: rgb(31, 31, 59);
   grid-area: contact;
-  border-right: 4px solid black;
+  border-right: 4px solid rgb(53, 57, 74);
   margin-right: 25%;
   font-size: 27px;
   padding-right: 30px;
