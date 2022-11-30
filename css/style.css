@@ -35,16 +35,20 @@ p {
   background-color: skyblue;
   position: absolute;
   left: 0;
-  right: 60%;  
+  right: 60%;
 }
 
 #nav-header h1 {
   text-align: right;
   font-size: 40px;
-  padding: 1px;
+  padding: 5px;
 }
 
-.nav a{
+#nav-links {
+  margin-right: 40px;
+}
+
+.nav a {
   padding: 0px 20px;
   font-size: 20px;
   position: flex;
@@ -67,7 +71,8 @@ p {
   font-size: 25px;
   position: absolute;
   right: 50px;
-  top: 200px
+  top: 200px;
+  padding: 5px;
 }
 
 #about {
@@ -76,8 +81,8 @@ p {
   border-right: 4px solid black;
   margin-right: 25%;
   font-size: 27px;
-  padding-right: 30px; 
-  text-align:right;
+  padding-right: 30px;
+  text-align: right;
 }
 
 
@@ -90,8 +95,8 @@ p {
   display: grid;
   grid-template-rows: 300px;
   grid-template-columns: 20% 80%;
-  grid-template-areas: 
-  "about content";
+  grid-template-areas:
+    "about content";
 }
 
 #work-1 {
@@ -123,10 +128,10 @@ p {
   color: rgb(31, 31, 59);
   grid-area: work;
   border-right: 4px solid black;
-  margin-right: 25%; 
+  margin-right: 25%;
   font-size: 27px;
   padding-right: 30px;
-  text-align:right;
+  text-align: right;
 }
 
 #portfolioGrid {
@@ -134,10 +139,10 @@ p {
   display: grid;
   grid-template-rows: 300px 120px 120px;
   grid-template-columns: 20% 40% 40%;
-  grid-template-areas: 
-  "work work-1 work-1"
-  "work work-2 work-3"
-  "work work-4 work-5";
+  grid-template-areas:
+    "work work-1 work-1"
+    "work work-2 work-3"
+    "work work-4 work-5";
 }
 
 .portfolioGridArea {
@@ -154,7 +159,7 @@ p {
 }
 
 .portfolioGridArea:hover {
-  box-shadow: inset 0 0 100px 100px rgba(255,255,255,0.3);
+  box-shadow: inset 0 0 100px 100px rgba(255, 255, 255, 0.3);
   border: 5px solid skyblue;
 }
 
@@ -177,18 +182,18 @@ p {
   display: grid;
   grid-template-rows: 150px;
   grid-template-columns: 20% 1fr 1fr 1fr 1fr 1fr;
-  grid-template-areas: 
-  "contact phone email github twitter spotify";
+  grid-template-areas:
+    "contact phone email github twitter spotify";
 }
 
 #contact {
   color: rgb(31, 31, 59);
   grid-area: contact;
   border-right: 4px solid black;
-  margin-right: 25%; 
+  margin-right: 25%;
   font-size: 27px;
   padding-right: 30px;
-  text-align:right;
+  text-align: right;
 }
 
 #phone {
