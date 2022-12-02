@@ -27,6 +27,8 @@ p {
   margin: 0;
 }
 
+/* --- NAV BAR & HEADER --- */
+
 .nav {
   display: flex;
   justify-content: flex-end;
@@ -81,6 +83,8 @@ p {
   padding: 5px;
 }
 
+/* --- ABOUT SECTION --- */
+
 #about {
   color: rgb(31, 31, 59);
   grid-area: about;
@@ -93,7 +97,6 @@ p {
 
 #img {
   grid-area: img;
-
   background-image:url(../images/Toby.jpg);
   box-shadow: 0 0 10px 10px white inset;
   background-position: center;
@@ -115,6 +118,8 @@ p {
   grid-template-areas:
     "about img content";
 }
+
+/* --- WORK SECTION --- */
 
 #work-1 {
   grid-area: work-1;
@@ -164,8 +169,6 @@ p {
     "work work-4 work-5";
 }
 
-
-
 .portfolioGridArea {
   background-position: center;
   background-size: cover;
@@ -199,6 +202,8 @@ p {
   font-size: 10px;
   padding-right: 5px;
 }
+
+/* --- CONTACT SECTION --- */
 
 #contactGrid {
   margin: 40px 5%;
@@ -249,4 +254,59 @@ p {
 
 #contactGrid p {
   border-bottom: 2px solid rgb(53, 57, 74);
+}
+
+#contactGrid a {
+  color: rgb(53, 57, 74);
+  border-bottom: 2px solid rgb(53, 57, 74);
+}
+
+/* --- MEDIA QUERIES --- */
+
+@media screen and (max-width: 1100px) {
+  #contact {
+    font-size: 10px;
+  }
+
+  #work {
+    font-size: 10px;
+  }
+
+  #about {
+    font-size: 10px;
+  }
+  
+}
+
+@media screen and (max-width: 1000px) {
+  .contact-content {
+    font-size: 10px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  #content {
+    font-size: 10px;
+  }
+
+  .nav a {
+    font-size: 10px;
+    padding: 0px 10px;
+
+  }
+}
+
+@media screen and (max-width: 600px) {
+  #portfolioGrid {
+    margin: 40px 5%;
+    display: grid;
+    grid-template-rows: 300px 120px 120px 120px 120px;
+    grid-template-columns: 20% 80%;
+    grid-template-areas:
+    "work work-1"
+    "work work-2"
+    "work work-3"
+    "work work-4"
+    "work work-5";
+  }
 }

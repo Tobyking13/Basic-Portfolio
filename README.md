@@ -1,6 +1,6 @@
 # Toby-King-Challenge-2-Portfolio
 
-update font color (blue)
+update font color (blue) ✅
 
 simplify CSS code
 
