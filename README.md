@@ -2,7 +2,7 @@
 
 ## Description
 
-This week's brief was to create a webpage portfolio using HTML & CSS. Making use of CSS Flexbox and Grid as well as media queries. The aim of this is to showcase all of my work and projects from this bootcamp as well as any other projects I do outside of the course. 
+This week's brief was to create a webpage portfolio using HTML & CSS. Making use of CSS Flexbox and Grid as well as media queries that make the page responsive so it still looks good on devices with smaller screens. The aim of this is to showcase all of my work and projects from this bootcamp as well as any other projects I do outside of the course. 
 
 The webpage has been made to look like the example portfolio we were given at the start of the assignment. I have added a picture of myself in the About section, a link to the first week's Challenge in the Portfolio section and a link to my GitHub Page. 
 
@@ -42,6 +42,7 @@ N/A
 * Navbar links send the user to the correct part of the portfolio.
 * CSS Grid used in the main section of the webpage. This includes the Portfolio section.
 * Links to my GitHub page on the footer. 
+* Webpage is responsive and will work on devices with smaller screens.
 
 ## How to Contribute
 
