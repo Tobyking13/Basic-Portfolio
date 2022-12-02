@@ -298,6 +298,15 @@ p {
   #nav-links {
     margin-right: 20px;
   }
+
+  #nav-header {
+    position: absolute;
+    right: 75%;
+  }
+
+  #nav-header h1 {
+    font-size: 25px;
+  }
 }
 
 @media screen and (max-width: 600px) {
