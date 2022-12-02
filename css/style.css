@@ -292,15 +292,13 @@ p {
   .nav a {
     font-size: 10px;
     padding: 0px 10px;
+  }
 
+  #nav-links {
+    margin-right: 20px;
   }
 }
 
-@media screen and (max-width: 300px) {
-  .nav a {
-    padding: 0px 5px;
-  }
-}
 @media screen and (max-width: 600px) {
   #portfolioGrid {
     margin: 40px 5%;
